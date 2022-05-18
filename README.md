@@ -15,3 +15,5 @@ A basic implementation of a sign up and a log in form, some widgets can be custo
 <p >
   <img width="300" height="600" src="./screenshots/signup.jpg">
 </p>
+
+### [Inspired by Srinath in Uplabs](https://www.uplabs.com/posts/sign-up-log-in-pages-mobile-ui)
