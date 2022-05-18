@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sign_in_up/app_constants.dart';
 
 class SocialProviders extends StatelessWidget {
   const SocialProviders({Key? key}) : super(key: key);
@@ -7,26 +8,26 @@ class SocialProviders extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: const [
-        _SocialProvider(
+      children: [
+        const _SocialProvider(
           bgColor: Colors.black,
           color: Colors.white,
           icon: 'assets/apple.png',
           size: 32,
         ),
         _SocialProvider(
-          bgColor: Color(0XFF1877F2),
+          bgColor: kFacebookBlue,
           color: Colors.white,
           icon: 'assets/facebook.png',
           size: 32,
         ),
         _SocialProvider(
-          bgColor: Color(0XFF03A9F4),
+          bgColor: kTwitterBlue,
           color: Colors.white,
           icon: 'assets/twitter.png',
           size: 32,
         ),
-        _SocialProvider(
+        const _SocialProvider(
           bgColor: Colors.white,
           color: Colors.white,
           icon: 'assets/google.png',

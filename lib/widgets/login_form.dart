@@ -1,5 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:sign_in_up/app_constants.dart';
 import 'package:sign_in_up/widgets/form_group.dart';
 
 class LoginForm extends StatelessWidget {
@@ -35,7 +36,7 @@ class LoginForm extends StatelessWidget {
           title: const Text('Remember me'),
           contentPadding: const EdgeInsets.all(0),
           controlAffinity: ListTileControlAffinity.leading,
-          activeColor: const Color(0XFF7C4FFB),
+          activeColor: kPurple,
         ),
         TextButton(
           onPressed: () {},
@@ -43,7 +44,7 @@ class LoginForm extends StatelessWidget {
             width: double.infinity,
             height: 56,
             decoration: BoxDecoration(
-              color: const Color(0XFF7C4FFB),
+              color: kPurple,
               borderRadius: BorderRadius.circular(8),
             ),
             alignment: Alignment.center,
@@ -61,9 +62,9 @@ class LoginForm extends StatelessWidget {
         const SizedBox(
           height: 30,
         ),
-        const Divider(
+        Divider(
           thickness: 2,
-          color: Color(0XFFD4D4D4),
+          color: kGrey,
         ),
         const SizedBox(
           height: 30,
@@ -76,8 +77,8 @@ class LoginForm extends StatelessWidget {
               children: [
                 TextSpan(
                   text: 'Sign up',
-                  style: const TextStyle(
-                    color: Color(0XFF7C4FFB),
+                  style: TextStyle(
+                    color: kPurple,
                   ),
                   recognizer: TapGestureRecognizer()
                     ..onTap = () => Navigator.pushNamed(

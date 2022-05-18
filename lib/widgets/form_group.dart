@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sign_in_up/app_constants.dart';
 
 class FormGroup extends StatelessWidget {
   const FormGroup({
@@ -30,8 +31,8 @@ class FormGroup extends StatelessWidget {
             if (secondAction != null)
               Text(
                 secondAction!,
-                style: const TextStyle(
-                  color: Color(0XFF7C4FFB),
+                style: TextStyle(
+                  color: kPurple,
                 ),
               )
           ],
@@ -45,8 +46,8 @@ class FormGroup extends StatelessWidget {
             hintText: placeholder,
             suffixIcon: suffixIcon,
           ),
-          style: const TextStyle(
-            color: Color(0XFF525252),
+          style: TextStyle(
+            color: kBrown,
           ),
         ),
       ],

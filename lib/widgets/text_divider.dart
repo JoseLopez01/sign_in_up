@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sign_in_up/app_constants.dart';
 
 class TextDivider extends StatelessWidget {
   const TextDivider(
@@ -12,10 +13,10 @@ class TextDivider extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const Expanded(
+        Expanded(
           child: Divider(
             thickness: 2,
-            color: Color(0XFFD4D4D4),
+            color: kGrey,
           ),
         ),
         Container(
@@ -24,10 +25,10 @@ class TextDivider extends StatelessWidget {
           ),
           child: Text(text),
         ),
-        const Expanded(
+        Expanded(
           child: Divider(
             thickness: 2,
-            color: Color(0XFFD4D4D4),
+            color: kGrey,
           ),
         ),
       ],
